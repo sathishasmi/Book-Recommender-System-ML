@@ -2,7 +2,19 @@ import pickle
 import streamlit as st
 import numpy as np
 
-st.markdown("<h1 style='text-align:center;'>Book Recommender System</h1>", unsafe_allow_html=True)
+st.markdown("""
+<style>
+img {
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+</style>
+""", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align:center;'>Book Recommender System </h1>", unsafe_allow_html=True)
 st.write("")
 st.markdown(
     "<h2 style='text-align:center;'>This system recommends books using collaborative filtering based on user ratings.</h2>",
@@ -59,27 +71,12 @@ selected_books = st.selectbox(
 )
 
 if st.button('Show Recommendation'):
-
+    st.subheader("Recommended Books")
     recommended_books, poster_url = recommend_book(selected_books)
 
-    col1, col2, col3, col4, col5 = st.columns(5)
+    cols = st.columns(5)
 
-    with col1:
-        st.text(recommended_books[1])
-        st.image(poster_url[1])
-
-    with col2:
-        st.text(recommended_books[2])
-        st.image(poster_url[2])
-
-    with col3:
-        st.text(recommended_books[3])
-        st.image(poster_url[3])
-
-    with col4:
-        st.text(recommended_books[4])
-        st.image(poster_url[4])
-
-    with col5:
-        st.text(recommended_books[5])
-        st.image(poster_url[5])
+    for i in range(5):
+        with cols[i]:
+            st.image(poster_url[i])
+            st.caption(recommended_books[i])
