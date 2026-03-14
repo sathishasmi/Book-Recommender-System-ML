@@ -5,12 +5,12 @@ import numpy as np
 st.markdown("""
 <style>
 img {
-    border-radius: 10px;
+    border-radius: 12px;
     transition: transform 0.2s;
 }
 
 img:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 </style>
 """, unsafe_allow_html=True)
@@ -74,9 +74,9 @@ if st.button('Show Recommendation'):
     st.subheader("Recommended Books")
     recommended_books, poster_url = recommend_book(selected_books)
 
-    cols = st.columns(5)
+cols = st.columns(5)
 
-    for i in range(5):
-        with cols[i]:
-            st.image(poster_url[i])
-            st.caption(recommended_books[i])
+for i in range(5):
+    with cols[i]:
+        st.image(poster_url[i], use_container_width=True)
+        st.markdown(f"<p style='text-align:center'>{recommended_books[i]}</p>", unsafe_allow_html=True)
