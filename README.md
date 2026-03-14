@@ -4,6 +4,8 @@
 A Machine Learning based book recommendation system that suggests books similar to the one selected by the user.  
 The system uses **Collaborative Filtering** and **Cosine Similarity** to recommend books based on user ratings.
 
+## Live Demo
+https://sathish-book-recommendation.streamlit.app
 ---
 
 ## 📊 Dataset
