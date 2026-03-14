@@ -1,35 +1,109 @@
 # Book Recommendation System
 
-## Project Description
+##  Project Description
+A Machine Learning based book recommendation system that suggests books similar to the one selected by the user.  
+The system uses **Collaborative Filtering** and **Cosine Similarity** to recommend books based on user ratings.
 
-This project is a Book Recommendation System built using Machine Learning. It recommends books to users based on similarity between books using collaborative filtering techniques.
+---
 
-## Dataset
+## 📊 Dataset
+The dataset contains information about **books, users, and ratings**.
 
-The dataset contains information about books, users, and ratings.
+Dataset source:
+https://www.kaggle.com/datasets/ra4u12/bookrecommendation
 
-## Technologies Used
+---
 
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* Jupyter Notebook
+##  Technologies Used
 
-## Model Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Streamlit
+- Jupyter Notebook
 
-Collaborative Filtering using K-Nearest Neighbors (KNN) algorithm to find similar books based on user ratings.
+---
 
-## How it Works
+## Machine Learning Model
 
-The system creates a user-book rating matrix and uses cosine similarity to identify books similar to the one selected by the user.
+The recommendation system uses:
 
-## How to Run
+**Collaborative Filtering with K-Nearest Neighbors (KNN)**  
+to find books similar to the selected book.
 
-1. Clone the repository
-2. Install required libraries
-3. Run the Jupyter Notebook
+---
 
-## Output
+##  How It Works
 
-The system recommends top similar books based on the selected book.
+1. Load book, user, and rating datasets
+2. Clean and preprocess the data
+3. Create a **user-book rating matrix**
+4. Apply **Cosine Similarity**
+5. Use **KNN model** to find similar books
+6. Display recommendations using **Streamlit UI**
+
+---
+
+## 📂 Project Structure
+
+├── artifacts
+│ ├── model.pkl
+│ ├── book_names.pkl
+│ ├── book_pivot.pkl
+│ └── final_rating.pkl
+│
+├── data
+│ └── BX-Books.csv
+│
+├── notebooks
+│ └── Book_Recommendation.ipynb
+│
+├── app.py
+├── requirements.txt
+└── README.md
+
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Clone the repository
+
+### 2️⃣ Navigate to project folder
+
+### 3️⃣ Install required libraries
+
+### 4️⃣ Run the Streamlit app
+
+
+---
+
+##  Application Interface
+
+The web interface allows users to:
+
+- Select a book
+- Get similar book recommendations
+- View book cover images
+
+---
+
+##  Future Improvements
+
+- Hybrid recommendation system
+- Better UI design
+- User login system
+
+---
+
+## 👨‍💻 Author
+
+**Satheesh**
+
+GitHub:  
+https://github.com/sathishasmi
+
+
+
+
