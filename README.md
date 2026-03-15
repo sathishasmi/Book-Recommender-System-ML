@@ -53,20 +53,33 @@ to find books similar to the selected book.
 
 ## 📂 Project Structure
 
-├── artifacts
+Book-Recommender-System-ML
+│
+├── assets
+│ └── screenshot.png # App UI screenshot for README
+│
+├── artifacts # Saved ML model and processed files
 │ ├── model.pkl
 │ ├── book_names.pkl
 │ ├── book_pivot.pkl
 │ └── final_rating.pkl
 │
-├── data
-│ └── BX-Books.csv
+├── data # Dataset used for training
+│ ├── BX-Books.csv
+│ ├── BX-Book-Ratings.csv
+│ └── BX-Users.csv
 │
-├── notebooks
+├── notebooks # Jupyter notebook for experimentation
 │ └── Book_Recommendation.ipynb
 │
-├── app.py
-├── requirements.txt
+├── .streamlit # Streamlit configuration
+│ └── config.toml
+│
+├── app.py # Main Streamlit application
+├── requirements.txt # Python dependencies
+├── runtime.txt # Python version for deployment
+├── .python-version # Python version config
+├── .gitignore
 └── README.md
 
 
