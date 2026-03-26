@@ -74,12 +74,12 @@ if st.button('Show Recommendation'):
     st.subheader("Recommended Books")
     recommended_books, poster_url = recommend_book(selected_books)
 
-cols = st.columns(5)
+    cols = st.columns(5)
 
-for i in range(5):
-    with cols[i]:
-        st.image(poster_url[i], use_container_width=True)
-        st.markdown(f"<p style='text-align:center'>{recommended_books[i]}</p>", unsafe_allow_html=True)
+    for i in range(5):
+        with cols[i]:
+            st.image(poster_url[i], use_container_width=True)
+            st.markdown(f"<p style='text-align:center'>{recommended_books[i]}</p>", unsafe_allow_html=True)
 
 st.markdown("---")
 st.markdown(
