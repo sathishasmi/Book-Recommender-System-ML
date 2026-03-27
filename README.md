@@ -7,10 +7,14 @@ The system uses **Collaborative Filtering** and **Cosine Similarity** to recomme
 ## Live Demo
 https://sathish-book-recommendation.streamlit.app
 
-## App Screenshot
+## App Screenshot 1
 
-![Book Recommender App demo](assets/screenshot.png),![Book Recommender - input](assets/inputbook.png),![Book Recommender - output](assets/book.png)
-t
+![Book Recommender App demo](assets/screenshot.png)
+
+## App Screenshot 2
+
+![Book Recommender - output](assets/book.png)
+
 
 ---
 
