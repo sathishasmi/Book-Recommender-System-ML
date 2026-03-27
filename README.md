@@ -11,10 +11,14 @@ https://sathish-book-recommendation.streamlit.app
 
 ![Book Recommender App demo](assets/screenshot.png)
 
+
+
 ## Book Recommender - input
+
 ![Book Recommender - input](assets/inputbook.png)
 
 ## Book Recommender - output
+
 ![Book Recommender - output](assets/book.png)
 
 ---
